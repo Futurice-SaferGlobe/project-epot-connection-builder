@@ -26,29 +26,37 @@
     }
   };
 
-  const findYbyUID = uid => {
-    const svgTop = $('svg').position().top;
-    const liTop = $('#from-column a[data-uid="' + uid + '"]').position().top;
-    return liTop;
-  };
+  const findYbyUID = uid => $('#from-column a[data-uid="' + uid + '"]').position().top;
+  const findX2 = () => $('svg').width();
+  const lineGenerator = d3.line().curve(d3.curveBasis);
 
   const update = () => {
     if (!svg) {
       svg = d3.select(container).append("svg")
           .attr("width", "100%")
-          .attr("height", "1300")
-          .attr("viewbox", "0 0 300 1300");
+          .attr("height", "1300");
     }
 
-    svg.selectAll("line")
+    svg.selectAll("path")
     .data(connectionsAsArray())
     .enter()
-      .append("line")
-      .attr("x1", 0)
-      .attr("y1", d => findYbyUID(d.from))
-      .attr("x2", 300)
-      .attr("y2", d => findYbyUID(d.to))
-      .style("stroke", "black");
+      .append("path")
+      .attr("d", d => {
+        const x1 = 0;
+        const y1 = findYbyUID(d.from);
+        const x2 = findX2();
+        const y2 = findYbyUID(d.to);
+        const points = [
+          [x1, y1],
+          [x1 + 100, y1],
+          [x2 - 100, y2],
+          [x2, y2]
+        ];
+        return lineGenerator(points);
+      })
+      .style("fill", "none")
+      .style("stroke", "#ff9f16")
+      .style("stroke-width", "2");
 
   };
 
