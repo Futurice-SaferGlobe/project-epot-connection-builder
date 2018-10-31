@@ -1,3 +1,20 @@
+body {
+  background: #003057;
+}
+
+*,
+
+a, a:active, a:visited {
+  color: white;
+}
+  a:hover {
+    color: #ff9f16;
+  }
+
+.jumbotron {
+  background: #003057;
+}
+
 #from-column a {}
   #from-column a.active {
     color: #ff9f16;
