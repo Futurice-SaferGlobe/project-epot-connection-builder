@@ -12,12 +12,13 @@
     const $this = $(event.target);
     const current = $this.data('uid');
 
-    if (activeFrom) {
-      if (activeFrom === current) {
-        activeFrom = null;
-        $this.removeClass('active');
-      }
+    if (activeFrom && activeFrom === current) {
+      activeFrom = null;
+      $this.removeClass('active');
     } else {
+      if (activeFrom) {
+        $('#from-column a[data-uid="' + activeFrom + '"]').removeClass('active');
+      }
       activeFrom = current;
       $this.addClass('active');
     }
