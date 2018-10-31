@@ -49,6 +49,8 @@
   const strokeDasharrayByType = type => type === 'broken-connection' ? '5,5' : 'none';
 
   const update = () => {
+    const connectionArray = connectionsAsArray();
+
     if (!svg) {
       svg = d3.select(container).append("svg")
           .attr("width", "100%")
@@ -56,7 +58,7 @@
     }
 
     svg.selectAll("path")
-      .data(connectionsAsArray())
+      .data(connectionArray)
       .enter()
         .append("path")
         .attr("d", d => {
@@ -82,7 +84,7 @@
       .style("stroke", d => strokeColor(d));
 
     svg.selectAll("path")
-      .data(connectionsAsArray())
+      .data(connectionArray)
       .exit().remove();
   };
 
