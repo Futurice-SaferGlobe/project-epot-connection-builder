@@ -26,9 +26,12 @@
     }
   };
 
-  const findYbyUID = uid => $('#from-column a[data-uid="' + uid + '"]').position().top;
+  const findYbyUID = uid => $('#from-column a[data-uid="' + uid + '"]').position().top + 6;
   const findX2 = () => $('svg').width();
   const lineGenerator = d3.line().curve(d3.curveBasis);
+  const strokeWidthByType = type => type === 'strong-connection' ? 4 : 2;
+  const strokeColorByType = type => type === 'broken-connection' ? 'rgb(255,72,131)' : 'rgb(255,159,22)';
+  const strokeDasharrayByType = type => type === 'broken-connection' ? '5,5' : 'none';
 
   const update = () => {
     if (!svg) {
@@ -55,8 +58,9 @@
         return lineGenerator(points);
       })
       .style("fill", "none")
-      .style("stroke", "#ff9f16")
-      .style("stroke-width", "2");
+      .style("stroke", d => strokeColorByType(d.type))
+      .style("stroke-width", d => strokeWidthByType(d.type))
+      .style("stroke-dasharray", d => strokeDasharrayByType(d.type));
 
   };
 
