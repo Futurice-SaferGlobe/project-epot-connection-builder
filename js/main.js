@@ -22,6 +22,8 @@
       activeFrom = current;
       $this.addClass('active');
     }
+
+    Connections.setActiveFrom(activeFrom);
   });
 
   $('#to-column a').click(event => {
