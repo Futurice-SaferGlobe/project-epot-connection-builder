@@ -8,7 +8,7 @@ a, a:active, a:visited {
   color: white;
 }
   a:hover {
-    color: #ff9f16;
+    color: rgb(255,92,57);
   }
 
 .jumbotron {
@@ -17,7 +17,7 @@ a, a:active, a:visited {
 
 #from-column a {}
   #from-column a.active {
-    color: #ff9f16;
+    color: rgb(255,92,57);
     font-weight: bold;
   }
   #from-column a,

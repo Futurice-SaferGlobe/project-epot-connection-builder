@@ -44,7 +44,7 @@
   const strokeWidthByType = type => type === 'strong-connection' ? 4 : 2;
   const strokeColor = d => {
     if (d.from !== activeFrom) return dimStrokeColor;
-    return d.type === 'broken-connection' ? 'rgb(255,72,131)' : 'rgb(255,159,22)';
+    return d.type === 'broken-connection' ? 'rgb(255,0,0)' : 'rgb(255,92,57)';
   };
   const strokeDasharrayByType = type => type === 'broken-connection' ? '5,5' : 'none';
 
