@@ -2,7 +2,7 @@
   {
     "operation": "UNAMID",
     "area": "Darfur",
-    "internal-id": "unamid",
+    "internalId": "unamid",
     "data": [
       {
         "index": 1,
