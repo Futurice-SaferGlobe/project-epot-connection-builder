@@ -8,18 +8,23 @@ a, a:active, a:visited {
   color: white;
 }
   a:hover {
-    color: rgb(255,92,57);
+    color: #ff5739;
   }
 
-.jumbotron {
-  background: #003057;
+.btn-connection {
+  color: #fff;
+  background-color: #ff5739;
+  border-color: #cb2400;
 }
+  .btn-connection.active {
+    background-color: #ff2d00;
+  }
 
 #from-column a,
 #to-column a {}
   #from-column a.active,
   #to-column a.active {
-    color: rgb(255,92,57);
+    color: #ff5739;
     font-weight: bold;
   }
   #from-column a,

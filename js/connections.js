@@ -53,12 +53,19 @@
   const findYbyUID = uid => $('#from-column a[data-uid="' + uid + '"]').position().top + 6;
   const findX2 = () => $('svg').width();
   const lineGenerator = d3.line().curve(d3.curveBasis);
-  const strokeWidthByType = type => type === 'strong-connection' ? 4 : 2;
+
   const strokeColor = d => {
     if (d.from !== activeFrom) return dimStrokeColor;
     return d.type === 'broken-connection' ? 'rgb(255,0,0)' : 'rgb(255,92,57)';
   };
-  const strokeDasharrayByType = type => type === 'broken-connection' ? '5,5' : 'none';
+  const strokeWidth = d => {
+    if (d.from !== activeFrom) return 0.5;
+    return d.type === 'strong-connection' ? 4 : 2;
+  };
+  const strokeDasharray = d => {
+    if (d.from === activeFrom && d.type === 'broken-connection') return '5,5';
+    return 'none'
+  };
 
   const updateVisualisation = () => {
     const connectionArray = connectionsAsArray();
@@ -90,8 +97,8 @@
         })
         .style("fill", "none")
         .style("stroke", d => strokeColor(d))
-        .style("stroke-width", d => strokeWidthByType(d.type))
-        .style("stroke-dasharray", d => strokeDasharrayByType(d.type));
+        .style("stroke-width", d => strokeWidth(d))
+        .style("stroke-dasharray", d => strokeDasharray(d));
 
     svg.selectAll("path")
       .style("stroke", d => strokeColor(d));
