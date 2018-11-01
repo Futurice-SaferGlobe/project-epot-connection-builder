@@ -51,6 +51,14 @@
     }
   });
 
+  $('a#clear').click(event => {
+    event.preventDefault();
+    if (confirm("Are you sure you want to remove all connections and start over?")) {
+      Connections.list().forEach(c => Connections.remove(c));
+      updateToList();
+    }
+  });
+
   const updateToList = () => {
     const connections = Connections.list();
     const active = connections.filter(c => c.from === activeFrom);
