@@ -1,15 +1,32 @@
 body {
   background: #003057;
+  padding-top: 0;
 }
 
 *,
-
 a, a:active, a:visited {
   color: white;
 }
   a:hover {
     color: #ff5739;
   }
+
+hr {
+  background: white;
+}
+
+li, .btn, a, p {
+  font-size: 14px;
+}
+
+#instructions {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#connection-type-selector {
+  padding-bottom: 40px;
+}
 
 .btn-connection {
   color: #fff;
@@ -40,3 +57,7 @@ a, a:active, a:visited {
     color: #666666;
     cursor: default;
   }
+
+#remove-all-container p {
+  margin-bottom: 0;
+}

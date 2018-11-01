@@ -26,7 +26,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">EPOT Connection Builder</a>
@@ -35,7 +35,7 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="container">
+    <div id="instructions" class="container">
       <div class="row">
         <div class="col-md-6">
           <h3>How to build report connections</h3>
@@ -54,13 +54,10 @@
         <div class="col-md-6">
         </div>
       </div>
+      <hr>
     </div>
 
-    <div class="container">
-
-      <hr>
-
-      <!-- Example row of columns -->
+    <div id="connection-type-selector" class="container">
       <div class="row">
         <div class="col-md-12">
           <div id="connection-type" class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -76,6 +73,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
         <div id="from-column" class="col-md-4">
           <h2>From</h2>
@@ -238,8 +237,8 @@
       <hr>
 
       <div class="row">
-        <div class="col-md-12">
-          If you wish to remove all connections and start over, you can do it here: <a href="#" id="clear">REMOVE ALL CONNECTIONS</a>.
+        <div id="remove-all-container" class="col-md-12">
+          <p>If you wish to remove all connections and start over, you can do it here: <a href="#" id="clear">REMOVE ALL CONNECTIONS</a>.</p>
         </div>
       </div>
 
