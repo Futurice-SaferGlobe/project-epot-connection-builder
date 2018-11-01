@@ -27,7 +27,8 @@
     }
   };
 
-  const removeConnection = (key) => {
+  const removeConnection = (connection) => {
+    const key = createKey(connection.from, connection.to);
     delete connections[key];
     update();
   };
@@ -57,6 +58,8 @@
           .attr("height", "1300");
     }
 
+    svg.selectAll("path").remove();
+
     svg.selectAll("path")
       .data(connectionArray)
       .enter()
@@ -74,7 +77,6 @@
           ];
           return lineGenerator(points);
         })
-        .attr("id", d => createKey(d.from, d.to))
         .style("fill", "none")
         .style("stroke", d => strokeColor(d))
         .style("stroke-width", d => strokeWidthByType(d.type))
@@ -82,15 +84,13 @@
 
     svg.selectAll("path")
       .style("stroke", d => strokeColor(d));
-
-    svg.selectAll("path")
-      .data(connectionArray)
-      .exit().remove();
   };
 
   window.Connections = {
-      add: addConnection,
-      setActiveFrom: setActiveFrom
+    list: connectionsAsArray,
+    add: addConnection,
+    remove: removeConnection,
+    setActiveFrom: setActiveFrom
   };
 
 })(jQuery);

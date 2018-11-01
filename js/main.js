@@ -24,6 +24,7 @@
     }
 
     Connections.setActiveFrom(activeFrom);
+    updateToList();
   });
 
   $('#to-column a').click(event => {
@@ -32,12 +33,38 @@
     const current = $this.data('uid');
 
     if (activeFrom && activeFrom !== current) {
-      Connections.add({
+      const connection = {
         from: activeFrom,
         to: current,
         type: connectionType
-      });
+      };
+      const added = Connections.add(connection);
+
+      if (!added) {
+        Connections.remove(connection);
+        $this.removeClass('active');
+      } else {
+        $this.addClass('active');
+      }
+
+      updateToList();
     }
   });
+
+  const updateToList = () => {
+    const connections = Connections.list();
+    const active = connections.filter(c => c.from === activeFrom);
+    const blocked = connections.filter(c => c.to === activeFrom);
+
+    $('#to-column a').removeClass('active');
+    $('#to-column a').removeClass('blocked');
+
+    active.map(c => c.to)
+        .forEach(uid => $('#to-column a[data-uid="'+uid+'"]').addClass('active'));
+
+    blocked.map(c => c.from)
+        .concat([activeFrom])
+        .forEach(uid => $('#to-column a[data-uid="'+uid+'"]').addClass('blocked'));
+  };
 
 })(jQuery);

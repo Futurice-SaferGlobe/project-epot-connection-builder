@@ -15,20 +15,23 @@ a, a:active, a:visited {
   background: #003057;
 }
 
-#from-column a {}
-  #from-column a.active {
+#from-column a,
+#to-column a {}
+  #from-column a.active,
+  #to-column a.active {
     color: rgb(255,92,57);
     font-weight: bold;
   }
   #from-column a,
   #from-column a:hover,
-  #from-column a:active {
-    text-decoration: none;
-  }
-
-#to-column a {}
+  #from-column a:active,
   #to-column a,
   #to-column a:hover,
   #to-column a:active {
     text-decoration: none;
+  }
+
+  #to-column a.blocked {
+    color: #666666;
+    cursor: default;
   }
