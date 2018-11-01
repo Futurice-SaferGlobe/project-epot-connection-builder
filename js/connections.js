@@ -1,10 +1,16 @@
 (function ($) {
 
   const container = "#connections-container";
+  const storageId = "EPOT-CONNECTIONS-STORAGE";
 
   var svg = null;
   var activeFrom = null;
-  var connections = {};
+  var connections = (() => {
+    const cached = Storage.get(storageId);
+    if (cached) return cached;
+    else return {};
+  })();
+  console.log(connections);
 
   const createKey = (from, to) => from+"-"+to;
   const connectionsAsArray = () => Object.keys(connections).map(key => connections[key]);
@@ -38,6 +44,11 @@
     update();
   };
 
+  const update = () => {
+    Storage.set(storageId, connections);
+    updateVisualisation();
+  };
+
   const dimStrokeColor = "#6699CC";
   const findYbyUID = uid => $('#from-column a[data-uid="' + uid + '"]').position().top + 6;
   const findX2 = () => $('svg').width();
@@ -49,7 +60,7 @@
   };
   const strokeDasharrayByType = type => type === 'broken-connection' ? '5,5' : 'none';
 
-  const update = () => {
+  const updateVisualisation = () => {
     const connectionArray = connectionsAsArray();
 
     if (!svg) {
@@ -90,6 +101,7 @@
     list: connectionsAsArray,
     add: addConnection,
     remove: removeConnection,
+    update: update,
     setActiveFrom: setActiveFrom
   };
 

@@ -3,6 +3,8 @@
   var activeFrom = null;
   var connectionType = 'connection';
 
+  $(document).ready(() => Connections.update());
+
   $('#connection-type input').change(event => {
     connectionType = event.target.value;
   });
