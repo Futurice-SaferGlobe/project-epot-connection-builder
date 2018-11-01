@@ -59,7 +59,7 @@
     return d.type === 'broken-connection' ? 'rgb(255,0,0)' : 'rgb(255,92,57)';
   };
   const strokeWidth = d => {
-    if (d.from !== activeFrom) return 0.5;
+    if (d.from !== activeFrom) return 0.7;
     return d.type === 'strong-connection' ? 4 : 2;
   };
   const strokeDasharray = d => {
