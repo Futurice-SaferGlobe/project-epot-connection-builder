@@ -1,0 +1,150 @@
+{
+  "operation-internal-id": "unamid",
+  "connections": [
+    {
+      "from": "PROSTA_SUB_EXSTAU",
+      "to": "WOPESE_SUB_SEEXAB",
+      "type": "connection"
+    },
+    {
+      "from": "PROSTA_SUB_HURIVI",
+      "to": "PEOCEN_SUB_RULLAW",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_SUB_SEEXAB",
+      "to": "WOPESE_SUB_PARWOM",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_SUB_SEEXAB",
+      "to": "POLPRI_SUB_NATREC",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_SUB_VIPOPR",
+      "to": "PROSTA_SUB_DIDERE",
+      "type": "connection"
+    },
+    {
+      "from": "LEGCRE_SUB_IMPART",
+      "to": "PROSTA_TOP_HEADER",
+      "type": "connection"
+    },
+    {
+      "from": "PEOCEN_TOP_HEADER",
+      "to": "POLPRI_SUB_INCLUS",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_TOP_HEADER",
+      "to": "PROSTA_SUB_COMPOL",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_SUB_NATREC",
+      "to": "COHPAR_SUB_INAPCO",
+      "type": "connection"
+    },
+    {
+      "from": "PEOCEN_SUB_PUSASA",
+      "to": "INTSUP_TOP_HEADER",
+      "type": "connection"
+    },
+    {
+      "from": "NAINOW_SUB_SESERE",
+      "to": "WOPESE_SUB_SEGECO",
+      "type": "connection"
+    },
+    {
+      "from": "PEOCEN_SUB_UNICON",
+      "to": "PROSTA_SUB_DISPOP",
+      "type": "connection"
+    },
+    {
+      "from": "LEGCRE_SUB_CONGRU",
+      "to": "PEOCEN_SUB_UNICON",
+      "type": "connection"
+    },
+    {
+      "from": "COHPAR_SUB_BURSHA",
+      "to": "LEGCRE_SUB_CAPABI",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_SUB_IMCOWO",
+      "to": "INTSUP_TOP_HEADER",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_SUB_PODISU",
+      "to": "PROSTA_TOP_HEADER",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_SUB_REGINV",
+      "to": "NAINOW_TOP_HEADER",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_SUB_IMCOWO",
+      "to": "POLPRI_SUB_CONPRE",
+      "type": "connection"
+    },
+    {
+      "from": "PROSTA_SUB_HURIVI",
+      "to": "PEOCEN_SUB_PUSASA",
+      "type": "connection"
+    },
+    {
+      "from": "PROSTA_TOP_HEADER",
+      "to": "PEOCEN_SUB_RULLAW",
+      "type": "connection"
+    },
+    {
+      "from": "NAINOW_SUB_FRASOC",
+      "to": "LEGCRE_SUB_CAPABI",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_TOP_HEADER",
+      "to": "WOPESE_SUB_GENMAI",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_SUB_IMCOWO",
+      "to": "PEOCEN_SUB_RULLAW",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_TOP_HEADER",
+      "to": "PEOCEN_TOP_HEADER",
+      "type": "connection"
+    },
+    {
+      "from": "PROSTA_SUB_COMPOL",
+      "to": "LEGCRE_SUB_RAPDEP",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_SUB_RESPON",
+      "to": "POLPRI_SUB_VIPOPR",
+      "type": "connection"
+    },
+    {
+      "from": "LEGCRE_SUB_RAPDEP",
+      "to": "PROSTA_SUB_DIDERE",
+      "type": "connection"
+    },
+    {
+      "from": "POLPRI_SUB_INCLUS",
+      "to": "WOPESE_SUB_GENMAI",
+      "type": "connection"
+    },
+    {
+      "from": "WOPESE_SUB_IMCOWO",
+      "to": "POLPRI_SUB_VIPOPR",
+      "type": "connection"
+    }
+  ]
+}

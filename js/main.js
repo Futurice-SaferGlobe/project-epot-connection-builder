@@ -51,6 +51,10 @@
     }
   });
 
+  $('a#download').click(event => {
+    Download.generate();
+  });
+
   $('a#clear').click(event => {
     event.preventDefault();
     if (confirm("Are you sure you want to remove all connections and start over?")) {
