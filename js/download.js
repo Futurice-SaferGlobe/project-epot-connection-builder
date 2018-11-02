@@ -2,7 +2,7 @@
 
   const generate = () => {
     const content = {
-      "operation-internal-id": "",
+      "operationInternalId": "",
       "connections": Connections.list()
     };
     download(content);

@@ -1,5 +1,5 @@
 {
-  "operation-internal-id": "unamid",
+  "operationInternalId": "unamid",
   "connections": [
     {
       "from": "PROSTA_SUB_EXSTAU",
