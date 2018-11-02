@@ -7,8 +7,17 @@
   var activeFrom = null;
   var connections = (() => {
     const cached = Storage.get(storageId);
-    if (cached) return cached;
-    else return {};
+    if (cached) {
+      const deprecated = Object.keys(cached).reduce((value, key) => {
+        return value ||
+          AcceptedHeaders.indexOf(cached[key].from) === -1 ||
+          AcceptedHeaders.indexOf(cached[key].to) === -1;
+      }, false);
+      if (!deprecated) {
+        return cached;
+      }
+    }
+    return {};
   })();
 
   const createKey = (from, to) => from+"-"+to;
