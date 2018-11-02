@@ -10,7 +10,6 @@
     if (cached) return cached;
     else return {};
   })();
-  console.log(connections);
 
   const createKey = (from, to) => from+"-"+to;
   const connectionsAsArray = () => Object.keys(connections).map(key => connections[key]);

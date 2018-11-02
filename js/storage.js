@@ -29,7 +29,6 @@
   const get = (key) => {
     if (storageAvailable('localStorage')) {
       const storageString = localStorage.getItem(key);
-      console.log(storageString);
       if (storageString) {
         return JSON.parse(storageString);
       }
