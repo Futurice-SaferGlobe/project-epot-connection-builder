@@ -5,10 +5,9 @@
     "internalId": "fututest",
     "data": [
       {
-        "index": "﻿1",
+        "index": "1",
         "uid": "POLPRI_TOP_HEADER",
         "title": "Political primacy",
-        "content": "",
         "labels": [],
         "content": "",
         "subheaders": [
@@ -16,7 +15,6 @@
             "index": "1",
             "uid": "POLPRI_SUB_CONPRE",
             "title": "Conflict prevention",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -24,7 +22,6 @@
             "index": "2",
             "uid": "POLPRI_SUB_VIPOPR",
             "title": "Viable political process",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -32,7 +29,6 @@
             "index": "3",
             "uid": "POLPRI_SUB_NATREC",
             "title": "National reconciliation",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -40,7 +36,6 @@
             "index": "4",
             "uid": "POLPRI_SUB_REGINV",
             "title": "Political direction & support",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -50,7 +45,6 @@
         "index": "2",
         "uid": "PEOCEN_TOP_HEADER",
         "title": "People-centred",
-        "content": "",
         "labels": [],
         "content": "",
         "subheaders": [
@@ -58,7 +52,6 @@
             "index": "1",
             "uid": "PEOCEN_SUB_COMENG",
             "title": "Community engagement",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -66,7 +59,6 @@
             "index": "2",
             "uid": "PEOCEN_SUB_UNICON",
             "title": "Unintended consequences",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -74,7 +66,6 @@
             "index": "3",
             "uid": "PEOCEN_SUB_CONANA",
             "title": "Conflict analysis",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -82,7 +73,6 @@
             "index": "4",
             "uid": "PEOCEN_SUB_PEADIV",
             "title": "Peace dividends",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -90,7 +80,6 @@
             "index": "5",
             "uid": "PEOCEN_SUB_MEDDIA",
             "title": "Mediation & dialogue",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -98,7 +87,6 @@
             "index": "6",
             "uid": "PEOCEN_SUB_STRCOM",
             "title": "Communication & outreach",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -108,7 +96,6 @@
         "index": "3",
         "uid": "WOPESE_TOP_HEADER",
         "title": "Women, peace & security",
-        "content": "",
         "labels": [],
         "content": "",
         "subheaders": [
@@ -116,7 +103,6 @@
             "index": "1",
             "uid": "WOPESE_SUB_GENMAI",
             "title": "Gender mainstreaming",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -124,7 +110,6 @@
             "index": "2",
             "uid": "WOPESE_SUB_IMCOWO",
             "title": "Impact of conflict on women",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -132,7 +117,6 @@
             "index": "3",
             "uid": "WOPESE_SUB_PARWOM",
             "title": "Participation of women",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -140,7 +124,6 @@
             "index": "4",
             "uid": "WOPESE_SUB_SEEXAB",
             "title": "Preventing sexual exploitation & abuse",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -148,7 +131,6 @@
             "index": "5",
             "uid": "WOPESE_SUB_SEGECO",
             "title": "Conflict-related sexual violence",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -160,13 +142,11 @@
         "title": "Legitimacy & credibility",
         "content": "",
         "labels": [],
-        "content": "",
         "subheaders": [
           {
             "index": "1",
             "uid": "LEGCRE_SUB_PUBPER",
             "title": "Public perception",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -174,7 +154,6 @@
             "index": "2",
             "uid": "LEGCRE_SUB_IMPART",
             "title": "Impartiality",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -182,7 +161,6 @@
             "index": "3",
             "uid": "LEGCRE_SUB_RAPDEP",
             "title": "Rapid deployment",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -190,7 +168,6 @@
             "index": "4",
             "uid": "LEGCRE_SUB_CAPABI",
             "title": "Capabilities",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -198,7 +175,6 @@
             "index": "5",
             "uid": "LEGCRE_SUB_MANEXP",
             "title": "Managing expectations",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -206,7 +182,6 @@
             "index": "6",
             "uid": "LEGCRE_SUB_CIVSOC",
             "title": "Civil society",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -218,13 +193,11 @@
         "title": "Coherence & partnerships",
         "content": "",
         "labels": [],
-        "content": "",
         "subheaders": [
           {
             "index": "1",
             "uid": "COHPAR_SUB_FRACOO",
             "title": "Frameworks for coordination",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -232,7 +205,6 @@
             "index": "2",
             "uid": "COHPAR_SUB_INAPCO",
             "title": "Integrated approach / system coherence",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -240,7 +212,6 @@
             "index": "3",
             "uid": "COHPAR_SUB_OTINPR",
             "title": "Other international presence",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -252,13 +223,11 @@
         "title": "International support",
         "content": "",
         "labels": [],
-        "content": "",
         "subheaders": [
           {
             "index": "1",
             "uid": "INTSUP_SUB_BILINT",
             "title": "Bilateral interests",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -266,7 +235,6 @@
             "index": "2",
             "uid": "INTSUP_SUB_BURSHA",
             "title": "Burden sharing",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -274,7 +242,6 @@
             "index": "3",
             "uid": "INTSUP_SUB_REQINV",
             "title": "Regional involvement",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -282,7 +249,6 @@
             "index": "4",
             "uid": "INTSUP_SUB_EXTSPO",
             "title": "External spoilers",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -294,13 +260,11 @@
         "title": "National & international ownership",
         "content": "",
         "labels": [],
-        "content": "",
         "subheaders": [
           {
             "index": "1",
             "uid": "NAINOW_SUB_NOSTAC",
             "title": "Non-state (armed) actors",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -308,7 +272,6 @@
             "index": "2",
             "uid": "NAINOW_SUB_INSBUI",
             "title": "Institution building",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -316,7 +279,6 @@
             "index": "3",
             "uid": "NAINOW_SUB_SESERE",
             "title": "Security-sector reform",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -324,7 +286,6 @@
             "index": "4",
             "uid": "NAINOW_SUB_ABSCAP",
             "title": "Absorption capacity",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -332,7 +293,6 @@
             "index": "5",
             "uid": "NAINOW_SUB_ELICAP",
             "title": "Elite capture",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -340,7 +300,6 @@
             "index": "6",
             "uid": "NAINOW_SUB_FRASOC",
             "title": "Fragmented societies",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -348,7 +307,6 @@
             "index": "7",
             "uid": "NAINOW_SUB_CONBUI",
             "title": "Confidence building",
-            "content": "",
             "labels": [],
             "content": ""
           }
@@ -360,13 +318,11 @@
         "title": "Protection & stabilisation",
         "content": "",
         "labels": [],
-        "content": "",
         "subheaders": [
           {
             "index": "1",
             "uid": "PROSTA_SUB_PROCIV",
             "title": "Protection of civilians",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -374,7 +330,6 @@
             "index": "2",
             "uid": "PROSTA_SUB_HURIVI",
             "title": "Human rights violations / impunity",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -382,7 +337,6 @@
             "index": "3",
             "uid": "PROSTA_SUB_TRAJUS",
             "title": "Transitional justice",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -390,7 +344,6 @@
             "index": "4",
             "uid": "PROSTA_SUB_RULLAW",
             "title": "Rule of law",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -398,7 +351,6 @@
             "index": "5",
             "uid": "PROSTA_SUB_DISPOP",
             "title": "Displaced populations",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -406,7 +358,6 @@
             "index": "6",
             "uid": "PROSTA_SUB_EXSTAU",
             "title": "Extension of state authority",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -414,7 +365,6 @@
             "index": "7",
             "uid": "PROSTA_SUB_PUBSEF",
             "title": "Public safety & secure environment",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -422,7 +372,6 @@
             "index": "8",
             "uid": "PROSTA_SUB_COMPOL",
             "title": "Community policing",
-            "content": "",
             "labels": [],
             "content": ""
           },
@@ -430,13 +379,11 @@
             "index": "9",
             "uid": "PROSTA_SUB_DIDERE",
             "title": "Disarmament, demobilisation, & reintegration (DDR)",
-            "content": "",
             "labels": [],
             "content": ""
           }
         ]
       }
-
     ]
   }
 ]
