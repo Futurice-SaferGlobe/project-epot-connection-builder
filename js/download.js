@@ -5,7 +5,7 @@
       "operationInternalId": "",
       "connections": Connections.list()
     };
-    download(content);
+    download([content]);
   };
 
   const download = (content) => {
